@@ -12,7 +12,7 @@ Next is acquiring an example of the finished product so I know where to put what
 
 Example acquired, finishing up project
 
-Need to figure out a way to convert data from an array to a <li> item
+Need to figure out a way to convert data from an array to a -li- item
 
 Skipping array issue for now
 
