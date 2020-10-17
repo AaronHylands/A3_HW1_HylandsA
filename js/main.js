@@ -5,15 +5,17 @@
     .then(res => res.json())
     .then(data => {
         console.log(data);
-        let profNameSlot = document.querySelector(".text-primary"),
+        let profNameSlot = document.querySelector(".profNameSlot"),
             classTimeSlot = document.querySelector(".list-inline"),
             courseDescSlot = document.querySelector(".courseDescSlot"),
-            courseNameSlot = document.querySelector(".courseNameSlot");
+            courseNameSlot = document.querySelector(".courseNameSlot"),
+            courseNameSlot2 = document.querySelector(".text-primary");
 
-        profNameSlot.textContent = data.profname;
+        profNameSlot.textContent = "Professor - " + data.profname;
         classTimeSlot.textContent = data.classtime;
         courseDescSlot.textContent = data.coursedesc;
-        courseNameSlot.textContent = data.coursename;
+        courseNameSlot.textContent = data.coursename + " | " + data.coursecode;
+        courseNameSlot2.textContent = data.coursename + " | " + data.coursecode;
         
 
 
